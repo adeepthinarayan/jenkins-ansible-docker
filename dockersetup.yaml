@@ -20,9 +20,9 @@
 
     -
       name: Seeting up the repo's for Docker
-      get_url:
-        url: https://download.docker.com/linux/centos/docker-ce.repo
-        dest: /etc/yum.repos.d/docker-ce.repo
+      apt_repository:
+        repo: deb https://download.docker.com/linux/ubuntu focal stable
+        state: present
 
     -
       name: Installing Docker Software
