@@ -6,7 +6,7 @@
   tasks:
     - 
       name: Removing old docker pkgs
-      yum:
+      apt:
         name:
           - docker 
           - docker-client
