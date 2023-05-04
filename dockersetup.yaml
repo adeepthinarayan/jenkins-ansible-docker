@@ -19,12 +19,6 @@
         state: absent
 
     -
-      name: Installing Pre-reqs
-      yum:
-        name: yum-utils
-        state: present
-
-    -
       name: Seeting up the repo's for Docker
       get_url:
         url: https://download.docker.com/linux/centos/docker-ce.repo
@@ -32,7 +26,7 @@
 
     -
       name: Installing Docker Software
-      yum:
+      apt:
         name:
           - docker-ce
           - docker-ce-cli
