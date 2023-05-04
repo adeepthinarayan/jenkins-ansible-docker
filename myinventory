@@ -1,1 +1,1 @@
-172.31.7.44
+localhost ansible_connection=local
